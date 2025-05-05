@@ -122,7 +122,7 @@
             
             try {
                 // This is where you'll send data to your serverless function
-                const response = await fetch('YOUR_SERVERLESS_FUNCTION_URL', {
+                const response = await fetch('/.netlify/functions/submit-prompt', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
